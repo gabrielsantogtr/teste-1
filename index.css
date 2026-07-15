@@ -2,7 +2,7 @@ body {
     color: #333333;
 }
 h1 {
-    color: #2e7d32;
+    color: #080808;
     text-align: center
 }
 fieldset {
@@ -10,4 +10,45 @@ fieldset {
 }
 footer {
     background-color: #e8f5e9;
+}
+.caixa-contato {
+    background-color: #f5f5f5;
+    border: 2px solid #135318;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 30px auto
+}
+.caixa-contato label,
+.caixa-contato input,
+.caixa-contato textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.caixa-contato label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#btn-enviar {
+    display: block;
+    width: 100%;
+    background-color: #227727;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.caixa-contato {
+    background-color: #f5f5f5;
+    border: 2px solid #2e7d32;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#btn-enviar {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
