@@ -1,54 +1,188 @@
+/* Tive ajuda de IA para estruturar alguns códigos */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
+
+/* Título principal */
 h1 {
-    color: #080808;
-    text-align: center
+    text-align: center;
+    color: #0b5ed7;
+    margin-bottom: 20px;
+    font-size: 2.3rem;
 }
-fieldset {
-    background-color: #f5f5f5;
+
+/* Subtítulos */
+h2 {
+    color: #222;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-left: 6px solid #0b5ed7;
+    padding-left: 10px;
 }
-footer {
-    background-color: #e8f5e9;
+
+h3 {
+    margin-top: 25px;
+    color: #444;
 }
-.caixa-contato {
-    background-color: #f5f5f5;
-    border: 2px solid #135318;
-    padding: 20px;
-    max-width: 500px;
-    margin: 0 auto 30px auto
-}
-.caixa-contato label,
-.caixa-contato input,
-.caixa-contato textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-.caixa-contato label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-#btn-enviar {
-    display: block;
-    width: 100%;
-    background-color: #227727;
-    color: #ffffff;
+
+/* Linha */
+hr {
+    margin: 20px 0;
     border: none;
+    border-top: 2px solid #ddd;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* Imagem */
+img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+table th {
+    background: #0b5ed7;
+    color: white;
     padding: 12px;
-    cursor: pointer;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+table tr:hover {
+    background: #dfefff;
+}
+
+/* Lista */
+ol {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+ol li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: #0b5ed7;
+    text-decoration: none;
     font-weight: bold;
 }
-.caixa-contato {
-    background-color: #f5f5f5;
-    border: 2px solid #2e7d32;
-    padding: 20px;
-    margin-bottom: 30px;
+
+a:hover {
+    color: #083b8a;
+    text-decoration: underline;
 }
-#btn-enviar {
-    background-color: #2e7d32;
-    color: #ffffff;
+
+/* Formulário */
+.caixa-contato {
+    margin-top: 35px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.15);
+}
+
+legend {
+    color: #0b5ed7;
+    font-size: 18px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0b5ed7;
+    outline: none;
+    box-shadow: 0 0 5px rgba(11,94,215,.4);
+}
+
+/* Botão */
+button {
+    background: #0b5ed7;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #084298;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 15px;
+    }
 }
